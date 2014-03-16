@@ -1,0 +1,12 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+      "name": "LoveLiveLog",
+      "file_exclude_patterns": ["*.sublime-project"],
+      "folder_exclude_patterns": [".cache"]
+		}
+	]
+}

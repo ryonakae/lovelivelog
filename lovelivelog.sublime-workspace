@@ -1,0 +1,269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"banner_05.png	w:300 h:250"
+			],
+			[
+				"common_sidebar_n",
+				"common_sidebar_news_title.png	w:65 h:16"
+			],
+			[
+				"chi",
+				"children  (function)"
+			],
+			[
+				"s",
+				"sp_common_footer_backtop.png	w:17 h:10"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"inde",
+				"index_movie_title.png	w:121 h:23"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 489.0
+	},
+	"console":
+	{
+		"height": 300.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), ‘wb’).write(urllib.request.urlopen( ‘http://sublime.wbond.net/’ + pf.replace(‘ ‘,’%20′)).read())",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/RYO/GitHub/lovelivelog/source/index.html.erb",
+		"/Users/RYO/GitHub/lovelivelog/config.rb",
+		"/Users/RYO/GitHub/lovelivelog/Gemfile",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_news-detail.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/js/fashioncollection.js",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_common.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-footer.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_index.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_media-queries.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-index.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index2.html",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-project",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-workspace",
+		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index2.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index2.haml",
+		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index.haml",
+		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/test_slim-sass.sublime-project",
+		"/Users/RYO/Desktop/test.html",
+		"/Users/RYO/Desktop/test.slim",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_variable.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/style.css",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-header.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/module/_module-animation.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/_extend.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/index.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/js/border.js",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/archive-bookmark.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/block/_global-header.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/_mixin.scss",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/RYO/Dropbox/Design/_NowProject/Border/html_2013-09_03/files/index.php",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/RYO/Dropbox/Memo/Text Memo/ソーシャルボタンのカスタマイズしたいならSharrreが良い.md",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-detail.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"options",
+			"option"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "lovelivelog.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
