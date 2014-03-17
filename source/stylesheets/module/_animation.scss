@@ -75,6 +75,10 @@ $default-animation-fill-mode: none !default;
   @include experimental(animation-iteration-count, unquote($iteration-count), $animation-support...);
 }
 
+@mixin animation-play-state($play-state: $default-animation-play-state) {
+  @include experimental(animation-play-state, unquote($play-state), $animation-support...);
+}
+
 // animation all-in-one shorthand
 
 @mixin single-animation(

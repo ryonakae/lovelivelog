@@ -71,50 +71,53 @@ a
   padding-right: 10px
 
 
+// stripe
+.stripe
+  width: 100%
+  height: 4px
+  display: table
+  table-layout: fixed
+
+  & > *
+    display: table-cell
+
+  .honoka
+    background-color: #f8b500
+  .eri
+    background-color: #6fc8e5
+  .kotori
+    background-color: #c7c7c7
+  .umi
+    background-color: #4c6cb3
+  .rin
+    background-color: #00ccbb
+  .maki
+    background-color: #fd8029
+  .nozomi
+    background-color: #e792f6
+  .hanayo
+    background-color: #349934
+  .niko
+    background-color: #ff60bf
+
+
 // main
 #main
-  display: none !important // 仮
+  // display: none !important // 仮
   +background-size(cover)
   background-color: $bgColor-inverse
   display: table
   text-align: center
   position: relative
 
-  #site-logo
-    display: table-cell
-    vertical-align: middle
-
-  // stripe
-  #stripe
+  .stripe
     position: absolute
     left: 0
     top: 0
-    width: 100%
-    height: 4px
-    display: table
-    table-layout: fixed
 
-    & > *
-      display: table-cell
-
-    .honoka
-      background-color: #f8b500
-    .eri
-      background-color: #6fc8e5
-    .kotori
-      background-color: #c7c7c7
-    .umi
-      background-color: #4c6cb3
-    .rin
-      background-color: #00ccbb
-    .maki
-      background-color: #fd8029
-    .nozomi
-      background-color: #e792f6
-    .hanayo
-      background-color: #349934
-    .niko
-      background-color: #ff60bf
+  #site-logo
+    display: table-cell
+    vertical-align: middle
 
   // gobottom
   #gobottom
@@ -133,6 +136,9 @@ a
       +animation-timing-function(linear)
       +animation-iteration-count(infinite)
 
+    &:hover
+      img
+
 
 // header
 #header
@@ -140,6 +146,9 @@ a
   width: 100%
   border-top: 4px solid #2b2b2b
   border-bottom: 4px solid #2b2b2b
+  position: absolute
+  left: 0
+  z-index: 20000
 
   ul
     display: table
@@ -150,16 +159,23 @@ a
       font-size: 130%
       font-weight: bold
       text-align: center
-      line-height: 70px
+      line-height: $height-header-pc
       text-transform: uppercase
+
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
 
 
 // content
 #content
+  margin-top: $height-header-pc + 60px
+
   h2
     font-size: 165%
     font-weight: bold
-    margin-top: 60px
+    margin-top: 1em
     text-transform: uppercase
 
   ul
@@ -174,7 +190,7 @@ a
       float: left
       width: $width
       margin-left: 20px
-      margin-bottom: 2.3em;
+      margin-bottom: 2em
 
       &:nth-child(4n+1)
         margin-left: 0
@@ -182,6 +198,9 @@ a
 
       .imgWrapper
         display: block
+
+        &:hover
+          opacity: 0.7
 
         .img
           position: relative
@@ -216,5 +235,34 @@ a
           width: 150px
           height: 150px
           text-align: center
-          opacity: 0.8
+          opacity: 0.85
           color: #e4007f
+          @extend %animation
+
+        &:hover
+          .img:after
+            opacity: 0
+            +scale(0.5)
+
+  section
+    & > p
+      margin-top: 1.5em
+
+  // #content #about
+  #about
+    a
+      +linkColor("color-link")
+
+
+// footer
+#footer
+  #backtop
+    line-height: 0
+    position: fixed
+    right: 0
+    bottom: -37px
+    cursor: pointer
+    @extend %animation
+
+    &:hover
+      bottom: 0
