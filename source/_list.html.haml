@@ -1,0 +1,10 @@
+- data[item].each_with_index do |item|
+  %li{ class: "#{'have' if item['have']}" }
+    %article
+      %a.imgWrapper(href="#{item['link']}" target="_blank")
+        %div.img(style="background-image:url(#{item['image']})")
+      %h3<
+        %a(href="#{item['link']}" target="_blank") #{item['title']}
+      %p.date<
+        ADD:
+        %time(pubdate="")> #{item['adddate']}

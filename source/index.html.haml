@@ -1,10 +1,11 @@
 -# music
 - cat = "music"
+- defined?(item) && item == 'music' ? 'active' : ''
 %div(id="#{cat}")
   %section
     %h2 #{cat}
     %ul
-      - data.music.each_with_index do |item|
+      - data[item].each_with_index do |item|
         %li{ class: "#{'have' if item['have']}" }
           %article
             %a.imgWrapper(href="#{item['link']}" target="_blank")
@@ -14,6 +15,7 @@
             %p.date<
               ADD:
               %time(pubdate="")> #{item['adddate']}
+
 
 -# video
 - cat = "video"
