@@ -22,16 +22,29 @@
     opacity: 1
 
 
+html
+  font-size: $fontSize + px
+
+
 body
   background-color: $bgColor
   font-family: $fontFamily
-  font-size: $fontSize
+  font-size: 1rem
   line-height: $lineHeight
 
   // Text Highlight
   ::selection
     background: lighten($color-link, 30%)
     color: $color-inverse
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  line-height: $lineHeight-title
 
 
 a
@@ -60,6 +73,7 @@ a
 
 // main
 #main
+  display: none !important // 仮
   +background-size(cover)
   background-color: $bgColor-inverse
   display: table
@@ -133,7 +147,74 @@ a
 
     li
       display: table-cell
-      font-size: 20px
+      font-size: 130%
       font-weight: bold
       text-align: center
       line-height: 70px
+      text-transform: uppercase
+
+
+// content
+#content
+  h2
+    font-size: 165%
+    font-weight: bold
+    margin-top: 60px
+    text-transform: uppercase
+
+  ul
+    width: 100%
+    +clearFix
+    margin-top: 1.5em
+
+    li
+      $margin: 20px
+      // $width: ($width-pc - 20) / 4 - $margin / 4 - 20px
+      $width: (($width-pc - 20) - $margin * 3) / 4
+      float: left
+      width: $width
+      margin-left: 20px
+      margin-bottom: 2.3em;
+
+      &:nth-child(4n+1)
+        margin-left: 0
+        clear: both
+
+      .imgWrapper
+        display: block
+
+        .img
+          position: relative
+          height: $width
+          +background-size(contain)
+          background-repeat: no-repeat
+          background-position: center center
+
+      h3
+        +fontSize(13)
+        font-weight: bold
+        margin-top: 1em
+
+      .date
+        +fontSize(11)
+        color: $color-sub
+        margin-top: 0.2em
+
+      // have
+      &.have
+        .img:after
+          font-family: $fontFamily-icon
+          content: '\e812'
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          margin: auto
+          font-size: 150px
+          line-height: 150px
+          width: 150px
+          height: 150px
+          text-align: center
+          opacity: 0.8
+          color: #e4007f

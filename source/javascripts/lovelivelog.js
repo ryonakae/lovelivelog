@@ -9,8 +9,8 @@ $(function(){
 
   // #main window resize
   var mainHeight;
-  $(window).on("ready resize", function(){
-    mainHeight = $(window).height() * 0.8;
+  $(window).on("load resize", function(){
+    mainHeight = $(window).height() - $("#header").outerHeight();
     $("#main").css({
       "width" : $(window).width(),
       "height" : mainHeight

@@ -35,7 +35,7 @@
   %body
     -# main
     %div#main
-      %h1#site-logo<
+      %h1#site-logo(style="opacity:0.05;")<
         %img(src="images/logo-01.svg" alt="LoveLive!")
 
       -#
@@ -61,20 +61,15 @@
       %nav#nav(role="navigation")
         %ul.inner
           %li<
-            %a(href="#music")<
-              Music
+            %a(href="#music") music
           %li<
-            %a(href="#blu-ray")<
-              Blu-ray
+            %a(href="#video") video
           %li<
-            %a(href="#book")<
-              Book
+            %a(href="#book") book
           %li<
-            %a(href="#figure")<
-              Figure
+            %a(href="#figure") figure
           %li<
-            %a(href="#other")<
-              Other
+            %a(href="#other") other
 
     -# content
     %div#content
@@ -83,3 +78,5 @@
 
     -# footer
     %footer#footer(role="contentinfo")
+      %div.inner
+        footer

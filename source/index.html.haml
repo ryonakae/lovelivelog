@@ -1,12 +1,93 @@
-%section
-  %h2 Music
-  %ul
-    %li
-      %article
-        %p.img
-          %a(href="#" target="_blank")
-            %img(src="#")
-        %h3<
-          %a(href="#" target="_blank") title
-        %p.date
-          %time(pubdate="") date
+-# music
+- cat = "music"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      - data.music.each_with_index do |item|
+        %li{ class: "#{'have' if item['have']}" }
+          %article
+            %a.imgWrapper(href="#{item['link']}" target="_blank")
+              %div.img(style="background-image:url(#{item['image']})")
+            %h3<
+              %a(href="#{item['link']}" target="_blank") #{item['title']}
+            %p.date<
+              ADD:
+              %time(pubdate="")> #{item['adddate']}
+
+-# video
+- cat = "video"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      - data.video.each_with_index do |item|
+        %li{ class: "#{'have' if item['have']}" }
+          %article
+            %a.imgWrapper(href="#{item['link']}" target="_blank")
+              %div.img(style="background-image:url(#{item['image']})")
+            %h3<
+              %a(href="#{item['link']}" target="_blank") #{item['title']}
+            %p.date<
+              ADD:
+              %time(pubdate="")> #{item['adddate']}
+
+-# book
+- cat = "book"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      - data.book.each_with_index do |item|
+        %li{ class: "#{'have' if item['have']}" }
+          %article
+            %p.img
+              %a(href="#{item['link']}" target="_blank")
+                %img(src="#{item['image']}")
+            %h3<
+              %a(href="#{item['link']}" target="_blank") #{item['title']}
+            %p.date<
+              ADD:
+              %time(pubdate="")> #{item['adddate']}
+
+-# figure
+- cat = "figure"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      - data.figure.each_with_index do |item|
+        %li{ class: "#{'have' if item['have']}" }
+          %article
+            %p.img
+              %a(href="#{item['link']}" target="_blank")
+                %img(src="#{item['image']}")
+            %h3<
+              %a(href="#{item['link']}" target="_blank") #{item['title']}
+            %p.date<
+              ADD:
+              %time(pubdate="")> #{item['adddate']}
+
+-# other
+- cat = "other"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      - data.other.each_with_index do |item|
+        %li{ class: "#{'have' if item['have']}" }
+          %article
+            %p.img
+              %a(href="#{item['link']}" target="_blank")
+                %img(src="#{item['image']}")
+            %h3<
+              %a(href="#{item['link']}" target="_blank") #{item['title']}
+            %p.date<
+              ADD:
+              %time(pubdate="")> #{item['adddate']}
+
+-# about
+%div#about
+  %section
+    %h2 about
+    %p hoge

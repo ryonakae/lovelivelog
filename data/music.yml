@@ -1,31 +1,42 @@
 -
-  date: 2014-03-17
-  title: TVアニメ ラブライブ!2期 OP主題歌
-  image: http://g-ec2.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu.gif
-  link: http://www.amazon.co.jp/dp/B00IMKDVDS
-  have: true
--
-  date: 2014-03-17
-  title: TVアニメ ラブライブ!2期 ED主題歌
-  image: http://g-ec2.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu.gif
-  link: http://www.amazon.co.jp/dp/B00IMKDYOY
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 東條希
+  image: http://ecx.images-amazon.com/images/I/61fhmxbbgAL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDKF4
   have: false
 -
-  date: 2014-03-17
-  title: ラブライブ!Solo Live! collection Memorial BOX II
-  image: http://ecx.images-amazon.com/images/I/51b5SbT1%2BQL.jpg
-  link: http://www.amazon.co.jp/dp/B00HCJDIQA
-  have: true
--
-  date: 2014-03-17
-  title: ラブライブ!Solo Live! II from μ’s 高坂穂乃果
-  image: http://ecx.images-amazon.com/images/I/61opz%2BV7MDL.jpg
-  link: http://www.amazon.co.jp/dp/B00HCJDKD6
-  have: true
--
-  date: 2014-03-17
-  title: ラブライブ!Solo Live! II from μ’s 絢瀬絵里
-  image: http://ecx.images-amazon.com/images/I/61uEqYB8%2BeL.jpg
-  link: http://www.amazon.co.jp/dp/B00HCJDKEK
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 小泉花陽
+  image: http://ecx.images-amazon.com/images/I/61YhS1NZ3ZL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDIV0
   have: false
 -
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 矢澤にこ
+  image: http://ecx.images-amazon.com/images/I/61Cw00vD1OL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDKY0
+  have: false
+-
+  adddate: 2014-03-18
+  title: タカラモノズ/Paradise Live
+  image: http://ecx.images-amazon.com/images/I/613yFwToYTL.jpg
+  link: http://www.amazon.co.jp/dp/B00GZ3RRD4
+  have: true
+-
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 東條希
+  image: http://ecx.images-amazon.com/images/I/61fhmxbbgAL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDKF4
+  have: false
+-
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 小泉花陽
+  image: http://ecx.images-amazon.com/images/I/61YhS1NZ3ZL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDIV0
+  have: false
+-
+  adddate: 2014-03-18
+  title: ラブライブ!Solo Live! II from μ’s 矢澤にこ
+  image: http://ecx.images-amazon.com/images/I/61Cw00vD1OL.jpg
+  link: http://www.amazon.co.jp/dp/B00HCJDKY0
+  have: false
