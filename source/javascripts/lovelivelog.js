@@ -1,11 +1,9 @@
 $(function(){
-  /*
   // Tumblr Background Imager
   TumblrImager.init({
     json: tumblr_api_read,
     containerSelector: '#main'
   });
-*/
 
 
   // common variables
@@ -14,7 +12,7 @@ $(function(){
 
 
   // #main window resize
-  $(window).on("load resize", function(){
+  $(window).on("ready resize", function(){
     headerHeight = $("#header").outerHeight()
     mainHeight = $(window).height() - headerHeight;
 
@@ -25,6 +23,19 @@ $(function(){
   });
 
 
+  // main logo random
+  var array = [
+    "images/logo-01.svg",
+    "images/logo-02.svg",
+    "images/logo-03.svg",
+    "images/logo-04.svg"
+  ];
+  var l = array.length;
+  var r = Math.floor(Math.random()*l);
+  var imgurl = array[r];
+  $("#site-logo img").attr({"src":imgurl});
+
+
   // header fixed
   var mainVisualHeight;
   var scroll;
@@ -33,19 +44,28 @@ $(function(){
     scroll = $(this).scrollTop();
 
     if ( scroll > mainHeight ) {
-      $("#header").addClass("fixed");
-      $("#header").removeAttr("style");
+      $("#header").addClass("fixed").removeAttr("style");
+      $("#backtop").addClass("show");
     }
     else {
-      $("#header").removeClass("fixed");
-      $("#header").css({ "top" : mainHeight });
+      $("#header").removeClass("fixed").css({ "top" : mainHeight });
+      $("#backtop").removeClass("show");
     }
+  });
+
+
+  // header sp toggle
+  $("#toggle").on("click", function(){
+    $("header").toggleClass("open");
+  });
+  $("#nav a").on("click", function(){
+    $("header").removeClass("open");
   });
 
 
   // gobottom
   $("#gobottom").on("click", function(){
-    $("html, body").stop().animate({ scrollTop : mainHeight }, 1000, "easeInOutCubic");
+    $("html, body").stop().animate({ scrollTop : mainHeight + 1 }, 1000, "easeInOutCubic");
   });
 
 

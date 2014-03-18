@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
-				"ba",
-				"banner_05.png	w:300 h:250"
+				"mar",
+				"margin-top"
 			],
 			[
-				"common_sidebar_n",
-				"common_sidebar_news_title.png	w:65 h:16"
+				"toggle",
+				"toggleClass  (function)"
 			],
 			[
-				"chi",
-				"children  (function)"
+				"max-",
+				"max-width:   (property)"
+			],
+			[
+				"b",
+				"both"
+			],
+			[
+				"togg",
+				"toggleClass  (function)"
+			],
+			[
+				"la",
+				"last-child  (pseudo-class)"
+			],
+			[
+				"n",
+				"nth-child(  (pseudo-class)"
+			],
+			[
+				"f",
+				"first-child  (pseudo-class)"
+			],
+			[
+				"onSlider",
+				"onSlideBefore"
 			],
 			[
 				"s",
@@ -39,6 +63,22 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"sets",
+				"Set Syntax: Sass"
+			],
+			[
+				"setsyntaxsass",
+				"Set Syntax: Sass"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"remo",
 				"Package Control: Remove Package"
 			],
@@ -47,16 +87,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"re",
-				"Package Control: Remove Package"
 			],
 			[
 				"remove",
@@ -83,7 +115,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 489.0
+		"width": 352.0
 	},
 	"console":
 	{
@@ -106,21 +138,55 @@
 	},
 	"file_history":
 	[
-		"/Users/RYO/GitHub/lovelivelog/source/index.html.erb",
-		"/Users/RYO/GitHub/lovelivelog/config.rb",
-		"/Users/RYO/GitHub/lovelivelog/Gemfile",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_news-detail.scss",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/js/fashioncollection.js",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_common.scss",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-footer.scss",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_index.scss",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_media-queries.scss",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-index.html",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index.html",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index2.html",
-		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-project",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/layouts/_list.html.haml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/music.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/video.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/_common.sass",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/config.rb",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/_media-queries.sass",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/Gemfile",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/index.html.haml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/_variable.sass",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/javascripts/lovelivelog.js",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/layouts/layout.haml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/images/logo-02.svg",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/apple-touch-icon-precomposed.png",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/style.css.sass",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/_mixin.sass",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/other.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/book.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/figure.yml",
+		"/C/Users/Ryo Nakae/GitHub/tumblr-solid/solid.html",
+		"/C/Users/Ryo Nakae/GitHub/tumblr-solid/js/solid.js",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/module/fontello-entypo/_fontello-entypo.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/Border2014/html/develop/single-blog.html",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/block/_index.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/Border2014/html/develop/index.html",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/stylesheets/module/_iconfont.scss",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/navlist.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/layouts/list.haml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/blu-ray.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/Gemfile.lock",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/data/test.yml",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/layouts/layout.erb",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/source/index.html.erb",
+		"/C/Users/Ryo Nakae/GitHub/lovelivelog/lovelivelog.sublime-project",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_news-detail.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/snap-index.html",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-index.html",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_media-queries.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_snap-index.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_common.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/snap-detail.html",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_snap-detail.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/_media-queries.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index.html",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/js/fashioncollection.js",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-header.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_index.scss",
+		"/C/Users/Ryo Nakae/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-project",
 		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-workspace",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/fashion-collection.sublime-project",
 		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index2.html",
 		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index2.haml",
 		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/develop/index.html",
@@ -128,7 +194,12 @@
 		"/Users/RYO/Dropbox/Design/_NowProject/test_slim-sass/test_slim-sass.sublime-project",
 		"/Users/RYO/Desktop/test.html",
 		"/Users/RYO/Desktop/test.slim",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_index.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/js/fashioncollection.js",
 		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_variable.scss",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/index.html",
+		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-footer.scss",
 		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/style.css",
 		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_gloval-header.scss",
@@ -145,13 +216,15 @@
 		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/RYO/Dropbox/Memo/Text Memo/ソーシャルボタンのカスタマイズしたいならSharrreが良い.md",
 		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/_media-queries.scss",
 		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/RYO/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-detail.html"
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/news-detail.html",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection/html/develop/_scss/block/_common.scss"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 59.0
 	},
 	"find_in_files":
 	{
@@ -165,8 +238,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"options",
-			"option"
+			"width",
+			"ov",
+			"ovh",
+			"display",
+			"ovh"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -191,11 +267,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 35.0
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 59.0
 	},
 	"layout":
 	{
@@ -227,7 +303,7 @@
 	"project": "lovelivelog.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":

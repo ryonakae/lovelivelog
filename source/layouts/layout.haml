@@ -5,8 +5,8 @@
   -# head
   %head
     %meta(charset="UTF-8")
-    %title LoveLiveLog
-    %meta(name="description" content="My Personal LoveLive! Log")
+    %title #{data.page.title}
+    %meta(name="description" content="#{data.page.description}")
     %meta(name="viewport" content="width=device-width, maximum-scale=1.0")
 
     -# OGP
@@ -35,9 +35,6 @@
   %body
     -# main
     %div#main
-      %h1#site-logo<
-        %img(src="images/logo-01.svg" alt="LoveLive!")
-
       -#
         stripe
         reference: https://twitter.com/kisalantis/status/81511663802662912
@@ -52,12 +49,20 @@
         %div.hanayo
         %div.niko
 
+      %h1#site-logo<
+        %img(src="" alt="LoveLive!")
+
+      -# text
+      %p.txt My Personal LoveLive! Log
+
       -# arrow
       #gobottom<
         %img(src="images/gobottom.svg" alt="")
 
     -# navigation
     %header#header(role="banner")
+      %div#toggle
+        %i.icon.icon-menu
       %nav#nav(role="navigation")
         %ul.inner
           %li<
@@ -80,8 +85,17 @@
     %footer#footer(role="contentinfo")
       %div#backtop
         %img(src="images/kotori-taso.png" alt="" width="100" height="100")
+
       %div.inner
-        footer
+        %p.copyright
+          %small © #{Time.now.year} #{data.page.title}
+
+        %ul.share
+          %li.button.share-fb
+            %div.fb-like(data-send="false" data-layout="button_count" data-width="100" data-show-faces="false")
+          %li.button.share-tw
+            %a(href="https://twitter.com/share" class="twitter-share-button" data-lang="ja") ツイート
+
       %div.stripe
         %div.honoka
         %div.eri
@@ -92,3 +106,28 @@
         %div.nozomi
         %div.hanayo
         %div.niko
+
+
+    -# script
+    %div#fb-root
+    :javascript
+      // Facebook Like Button
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+      // Twitter Tweet Button
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.src=p+'://platform.twitter.com/widgets.js';
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }
+      (document, 'script', 'twitter-wjs');

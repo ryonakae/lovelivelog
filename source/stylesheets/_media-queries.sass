@@ -1,0 +1,167 @@
+// ----------------------------------------
+// Settings
+// ----------------------------------------
+// Media Queries
+=mediaquery-pc
+  @media only screen and (min-width: $width-pc + 1)
+    @content
+
+=mediaquery-tablet
+  @media only screen and (max-width: $width-pc)
+    @content
+
+=mediaquery-smartphone
+  @media only screen and (max-width: $width-tablet - 1)
+    @content
+
+
+
+// ----------------------------------------
+// PC
+// ----------------------------------------
++mediaquery-pc
+
+
+
+// ----------------------------------------
+// Tablet
+// ----------------------------------------
++mediaquery-tablet
+  html
+    font-size: $fontSize * 0.9 + px
+
+  .inner
+    width: $width-tablet
+    padding-left: 20px
+    padding-right: 20px
+
+  #content
+    ul
+      li
+        $margin: 20px
+        $columns: 3
+        $width: (($width-tablet - 40) - $margin * ($columns - 1)) / $columns
+        width: $width
+        margin-left: $margin
+
+        &:nth-child(4n+1)
+          margin-left: $margin
+          clear: inherit
+
+        &:nth-child(3n+1)
+          margin-left: 0
+          clear: both
+
+        .imgWrapper
+          .img
+            height: $width
+
+
+
+// ----------------------------------------
+// SmartPhone
+// ----------------------------------------
++mediaquery-smartphone
+  // common
+  html
+    font-size: $fontSize * 0.8 + px
+
+  .inner
+    width: $width-smartphone
+    padding-left: 15px
+    padding-right: 15px
+
+
+  // main
+  #main
+    .txt
+      +fontSize(18)
+      bottom: 75px
+
+    #gobottom
+      width: 40px
+
+
+  // header
+  #header
+    height: 0
+    border: none
+    overflow: hidden
+
+    &.fixed
+      height: auto
+      border-top: 4px solid #2b2b2b
+      background: none
+
+    #toggle
+      display: inline-block
+
+    ul
+      height: 0
+      overflow: hidden
+      display: block
+
+      li
+        display: block
+        text-align: left
+        +fontSize(20)
+        line-height: 2
+
+    &.open
+      background-color: rgba(255,255,255,0.9)
+
+      ul
+        height: auto
+        margin-top: -2.5em
+        padding-bottom: 1em
+        border-bottom: 4px solid #2b2b2b
+
+
+  // content
+  #content
+    margin-top: 2.5em
+
+    ul
+      li
+        $margin: 15px
+        $columns: 2
+        $width: (($width-smartphone - 30) - $margin * ($columns - 1)) / $columns
+        width: $width
+        margin-left: $margin
+
+        &:nth-child(4n+1)
+          margin-left: $margin
+          clear: inherit
+
+        &:nth-child(3n+1)
+          margin-left: $margin
+          clear: inherit
+
+        &:nth-child(2n+1)
+          margin-left: 0
+          clear: both
+
+        .imgWrapper
+          .img
+            height: $width
+
+        &.have
+          .img:after
+            $size: 100px
+            font-size: $size
+            line-height: $size
+            width: $size
+            height: $size
+
+
+  // footer
+  #footer
+    #backtop
+      width: 70px
+      bottom: -70px
+
+      &.show
+        bottom: -27px
+
+      &:hover
+        bottom: 0

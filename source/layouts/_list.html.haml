@@ -1,10 +1,13 @@
-- data[item].each_with_index do |item|
+- cat.each_with_index do |item|
   %li{ class: "#{'have' if item['have']}" }
     %article
       %a.imgWrapper(href="#{item['link']}" target="_blank")
         %div.img(style="background-image:url(#{item['image']})")
       %h3<
         %a(href="#{item['link']}" target="_blank") #{item['title']}
-      %p.date<
-        ADD:
-        %time(pubdate="")> #{item['adddate']}
+      %p.release<
+        release:
+        %time(pubdate="#{item['release']}")> #{item['release']}
+      %p.add<
+        add:
+        %time(pubdate="#{item['add']}")> #{item['add']}

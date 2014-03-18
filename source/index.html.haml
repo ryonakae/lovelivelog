@@ -1,20 +1,16 @@
+---
+layout: layout
+title: LoveLiveLog
+description: My Personal LoveLive! Log
+---
+
 -# music
 - cat = "music"
-- defined?(item) && item == 'music' ? 'active' : ''
 %div(id="#{cat}")
   %section
     %h2 #{cat}
     %ul
-      - data[item].each_with_index do |item|
-        %li{ class: "#{'have' if item['have']}" }
-          %article
-            %a.imgWrapper(href="#{item['link']}" target="_blank")
-              %div.img(style="background-image:url(#{item['image']})")
-            %h3<
-              %a(href="#{item['link']}" target="_blank") #{item['title']}
-            %p.date<
-              ADD:
-              %time(pubdate="")> #{item['adddate']}
+      = partial 'layouts/list', locals: {cat: data.music}
 
 
 -# video
@@ -23,16 +19,7 @@
   %section
     %h2 #{cat}
     %ul
-      - data.video.each_with_index do |item|
-        %li{ class: "#{'have' if item['have']}" }
-          %article
-            %a.imgWrapper(href="#{item['link']}" target="_blank")
-              %div.img(style="background-image:url(#{item['image']})")
-            %h3<
-              %a(href="#{item['link']}" target="_blank") #{item['title']}
-            %p.date<
-              ADD:
-              %time(pubdate="")> #{item['adddate']}
+      = partial 'layouts/list', locals: {cat: data.video}
 
 -# book
 - cat = "book"
@@ -40,17 +27,7 @@
   %section
     %h2 #{cat}
     %ul
-      - data.book.each_with_index do |item|
-        %li{ class: "#{'have' if item['have']}" }
-          %article
-            %p.img
-              %a(href="#{item['link']}" target="_blank")
-                %img(src="#{item['image']}")
-            %h3<
-              %a(href="#{item['link']}" target="_blank") #{item['title']}
-            %p.date<
-              ADD:
-              %time(pubdate="")> #{item['adddate']}
+      = partial 'layouts/list', locals: {cat: data.book}
 
 -# figure
 - cat = "figure"
@@ -58,17 +35,7 @@
   %section
     %h2 #{cat}
     %ul
-      - data.figure.each_with_index do |item|
-        %li{ class: "#{'have' if item['have']}" }
-          %article
-            %p.img
-              %a(href="#{item['link']}" target="_blank")
-                %img(src="#{item['image']}")
-            %h3<
-              %a(href="#{item['link']}" target="_blank") #{item['title']}
-            %p.date<
-              ADD:
-              %time(pubdate="")> #{item['adddate']}
+      = partial 'layouts/list', locals: {cat: data.figure}
 
 -# other
 - cat = "other"
@@ -76,24 +43,13 @@
   %section
     %h2 #{cat}
     %ul
-      - data.other.each_with_index do |item|
-        %li{ class: "#{'have' if item['have']}" }
-          %article
-            %p.img
-              %a(href="#{item['link']}" target="_blank")
-                %img(src="#{item['image']}")
-            %h3<
-              %a(href="#{item['link']}" target="_blank") #{item['title']}
-            %p.date<
-              ADD:
-              %time(pubdate="")> #{item['adddate']}
+      = partial 'layouts/list', locals: {cat: data.other}
 
 -# about
 %div#about
   %section
     %h2 about
     %p
-      My Presonal LoveLive! Log.
-      %br<>
-      Contact:
-      %a(href="" target="_blank") RYO NAKAE
+      My Presonal <a href="http://www.lovelive-anime.jp/" target="_blank">LoveLive!</a> Log.
+      %br
+      Contact: <a href="http://brdr.jp/" target="_blank">RYO NAKAE</a>

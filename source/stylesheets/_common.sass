@@ -45,6 +45,7 @@ h4,
 h5,
 h6
   line-height: $lineHeight-title
+  letter-spacing: $letterSpacing-title
 
 
 a
@@ -105,6 +106,7 @@ a
 #main
   // display: none !important // 仮
   +background-size(cover)
+  background-position: 50% 50%
   background-color: $bgColor-inverse
   display: table
   text-align: center
@@ -119,6 +121,22 @@ a
     display: table-cell
     vertical-align: middle
 
+    img
+      max-width: 90%
+
+  .txt
+    color: $color-inverse
+    position: absolute
+    bottom: 100px
+    right: 0
+    left: 0
+    margin: auto
+    +fontSize(25)
+    font-style: italic
+    letter-spacing: $letterSpacing-title
+    +scaleY(1.1)
+
+
   // gobottom
   #gobottom
     position: absolute
@@ -127,17 +145,16 @@ a
     left: 0
     margin: auto
     width: 66px
-    height: 47px
     cursor: pointer
+    line-height: 0
 
     img
+      width: 100%
+      height: auto
       +animation-name(rotate)
       +animation-duration(1.5s)
       +animation-timing-function(linear)
       +animation-iteration-count(infinite)
-
-    &:hover
-      img
 
 
 // header
@@ -149,6 +166,23 @@ a
   position: absolute
   left: 0
   z-index: 20000
+  text-align: right
+
+  #toggle
+    margin-top: 10px
+    margin-right: 10px
+    $size: 35px
+    display: none
+    font-size: $size
+    line-height: $size
+    width: $size
+    height: $size
+    text-align: center
+
+    & *:before
+      margin-left: 0
+      margin-right: 0
+
 
   ul
     display: table
@@ -156,24 +190,26 @@ a
 
     li
       display: table-cell
-      font-size: 130%
+      +fontSize(22)
       font-weight: bold
       text-align: center
       line-height: $height-header-pc
       text-transform: uppercase
+      letter-spacing: $letterSpacing-title
 
   &.fixed
     position: fixed
     top: 0
     left: 0
+    background-color: rgba(255,255,255,0.9)
 
 
 // content
 #content
-  margin-top: $height-header-pc + 60px
+  margin-top: $height-header-pc + 4.5em
 
   h2
-    font-size: 165%
+    +fontSize(28)
     font-weight: bold
     margin-top: 1em
     text-transform: uppercase
@@ -185,11 +221,11 @@ a
 
     li
       $margin: 20px
-      // $width: ($width-pc - 20) / 4 - $margin / 4 - 20px
-      $width: (($width-pc - 20) - $margin * 3) / 4
+      $columns: 4
+      $width: (($width-pc - 20) - $margin * ($columns - 1)) / $columns
       float: left
       width: $width
-      margin-left: 20px
+      margin-left: $margin
       margin-bottom: 2em
 
       &:nth-child(4n+1)
@@ -213,11 +249,14 @@ a
         +fontSize(13)
         font-weight: bold
         margin-top: 1em
+        margin-bottom: 0.3em
 
-      .date
+      .add,
+      .release
         +fontSize(11)
         color: $color-sub
-        margin-top: 0.2em
+        // margin-top: 0.2em
+        line-height: $lineHeight-title
 
       // have
       &.have
@@ -230,13 +269,14 @@ a
           bottom: 0
           left: 0
           margin: auto
-          font-size: 150px
-          line-height: 150px
-          width: 150px
-          height: 150px
+          $size: 150px
+          font-size: $size
+          line-height: $size
+          width: $size
+          height: $size
           text-align: center
           opacity: 0.85
-          color: #e4007f
+          color: $color-link
           @extend %animation
 
         &:hover
@@ -256,13 +296,48 @@ a
 
 // footer
 #footer
+  .inner
+    margin-top: 8em
+    margin-bottom: 5em
+    +fontSize(13)
+
+    .share
+      margin-top: 1em
+      +clearFix
+
+      .button
+        float: left
+        margin-left: 5px
+        margin-right: 5px
+        height: 20px
+
+        &:first-child
+          margin-left: 0
+
+        &.share-fb
+          .fb-like
+            height: 20px
+
+            & > span
+              vertical-align: top !important
+
   #backtop
     line-height: 0
     position: fixed
     right: 0
-    bottom: -37px
+    bottom: -100px
     cursor: pointer
     @extend %animation
+    width: 100px
+    opacity: 0
+
+    img
+      width: 100%
+      height: auto
+
+    &.show
+      opacity: 1
+      bottom: -39px
 
     &:hover
       bottom: 0

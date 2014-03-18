@@ -1,6 +1,28 @@
 -
-  adddate: 2014-03-17
-  title: ラブライブ!μ’s 3rd Anniversary LoveLive!
+  title: ラブライブ!μ’s 3rd Anniversary LoveLive! Blu-ray
   image: http://ecx.images-amazon.com/images/I/61tNE7GaBVL.jpg
-  link: http://www.amazon.co.jp/dp/B00FEKXRE2
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00FEKXRE2/ryonakae-22/ref=nosim/
   have: true
+  release: 2013-12-25
+  add: 2014-03-18
+-
+  title: ラブライブ! ~国立音ノ木坂学院案内~ [Blu-ray]
+  image: http://ecx.images-amazon.com/images/I/61djwcgkszL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00ENSUEA6/ryonakae-22/ref=nosim/
+  have: true
+  release: 2013-12-25
+  add: 2014-03-18
+-
+  title: ラブライブ! (Love Live! School Idol Project) 7 [Blu-ray]
+  image: http://ecx.images-amazon.com/images/I/71IHBOBNsCL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00ASTRZH4/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-09-25
+  add: 2014-03-18
+-
+  title: ラブライブ! (Love Live! School Idol Project) 6 [Blu-ray]
+  image: http://ecx.images-amazon.com/images/I/71shZKCpZHL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00ASTRZGK/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-08-28
+  add: 2014-03-18
