@@ -1,6 +1,8 @@
-!!!(lang="ja", prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml")
-%html
+!!!(lang="ja")
 
+= partial 'layouts/aa'
+
+%html(prefix="og: http://ogp.me/ns#")
 
   -# head
   %head
@@ -10,7 +12,22 @@
     %meta(name="viewport" content="width=device-width, maximum-scale=1.0")
 
     -# OGP
+    %meta(property="fb:admins" content="100001275466582")
+    %meta(property="og:type" content="website")
+    %meta(property="og:title" content="#{data.page.title}")
+    %meta(property="og:locale" content="ja_JP")
+    %meta(property="og:description" content="#{data.page.description}")
+    %meta(property="og:site_name" content="#{data.page.title}")
+    %meta(property="og:url" content="http://ryonakae.github.io/lovelivelog/")
+    %meta(property="og:image" content="http://ryonakae.github.io/lovelivelog/images/ogp.jpg")
+
     -# Twitter Meta
+    %meta(name="twitter:card" value="summary_large_image")
+    %meta(name="twitter:title" value="#{data.page.title}")
+    %meta(name="twitter:description" value="#{data.page.description}")
+    %meta(name="twitter:creator" value="@ryo_dg")
+    %meta(name="twitter:image" value="http://ryonakae.github.io/lovelivelog/images/ogp.jpg")
+    %meta(name="twitter:url" value="http://ryonakae.github.io/lovelivelog/")
 
     = favicon_tag "images/favicon.ico"
     = stylesheet_link_tag "style"
@@ -21,7 +38,7 @@
     %script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
     %script(src="//cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js")
     %script(src="//ryo-lovelive.tumblr.com/api/read/json?num=50&amp;type=photo")
-    %script(src="javascripts/tumblr_background_imager.js")
+    = javascript_include_tag "tumblr_background_imager"
     = javascript_include_tag "lovelivelog"
 
 
@@ -35,9 +52,10 @@
   %body
     -# main
     %div#main
-      -#
-        stripe
-        reference: https://twitter.com/kisalantis/status/81511663802662912
+      -# overlay
+      %div#overlay
+
+      -# stripe reference: https://twitter.com/kisalantis/status/81511663802662912
       %div.stripe
         %div.honoka
         %div.eri

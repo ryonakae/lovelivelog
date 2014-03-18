@@ -1,7 +1,98 @@
 -
-  title: book
-  image:
-  link:
+  title: ラブライブ! School idol diary ~絢瀬絵里~
+  image: http://ecx.images-amazon.com/images/I/51xUpbS9n%2BL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917277/ryonakae-22/ref=nosim/
   have: false
-  add: 2014-03-17
-  release: 2014-03-17
+  release: 2014-04-05
+  add: 2014-03-19
+-
+  title: 『ラブライブ!』Official compilation book
+  image: http://ecx.images-amazon.com/images/I/51LxGYY3jRL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00I38TFZC/ryonakae-22/ref=nosim/
+  have: true
+  release: 2014-02-18
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~東條希~
+  image: http://ecx.images-amazon.com/images/I/518zkBj0%2BAL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917269/ryonakae-22/ref=nosim/
+  have: false
+  release: 2014-01-30
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~矢澤にこ~
+  image: http://ecx.images-amazon.com/images/I/51DnxcYZ5oL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917250/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-12-27
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~星空凛~
+  image: http://ecx.images-amazon.com/images/I/518Ubnt2Q4L.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917242/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-11-30
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~小泉花陽~
+  image: http://ecx.images-amazon.com/images/I/51fouWBahTL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917234/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-09-30
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~西木野真姫~
+  image: http://ecx.images-amazon.com/images/I/514qhnwnc6L.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917226/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-08-30
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~南ことり~
+  image: http://ecx.images-amazon.com/images/I/51Kv1afrYAL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048917218/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-07-30
+  add: 2014-03-19
+-
+  title: ラブライブ! パーフェクトビジュアルコレクション ~Dream~
+  image: http://ecx.images-amazon.com/images/I/61tVMhy5OmL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048915851/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-07-30
+  add: 2014-03-19
+-
+  title: ラブライブ! パーフェクトビジュアルコレクション ~Smile~
+  image: http://ecx.images-amazon.com/images/I/61o8SA2jxRL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048915843/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-07-30
+  add: 2014-03-19
+-
+  title: ラブライブ! スクールアイドルフェスティバル 公式ガイドブック
+  image: http://ecx.images-amazon.com/images/I/61sUgAz2-JL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048919032/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-07-30
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~園田海未~
+  image: http://ecx.images-amazon.com/images/I/51pRbNj9GPL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/404891720X/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-06-29
+  add: 2014-03-19
+-
+  title: ラブライブ! School idol diary ~高坂穂乃果~
+  image: http://ecx.images-amazon.com/images/I/51VKm0%2BEbhL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/4048915835/ryonakae-22/ref=nosim/
+  have: false
+  release: 2013-05-30
+  add: 2014-03-19
+-
+  title: 『ラブライブ!』ファーストファンブック
+  image: http://ecx.images-amazon.com/images/I/61uuirtjtAL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B0090C8M0Y/ryonakae-22/ref=nosim/
+  have: false
+  release: 2012-09-29
+  add: 2014-03-19

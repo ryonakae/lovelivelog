@@ -46,11 +46,8 @@ activate :livereload
 # end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
-
 set :fonts_dir, 'fonts'
 
 # Build-specific configuration
@@ -59,7 +56,7 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash
@@ -83,4 +80,10 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :git
   deploy.branch = 'gh-pages'
+end
+
+# Change Compass configuration
+compass_config do |config|
+  config.output_style = :compact
+  set :fonts_dir, 'fonts' # ←コレ
 end

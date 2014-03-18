@@ -2,13 +2,13 @@
 
 
 @include font-face(
-	'fontello-entypo', 
+	'fontello-entypo',
 	font-files(
-		'fontello-entypo/fontello-entypo.woff', woff,
-		'fontello-entypo/fontello-entypo.ttf', ttf,
-		'fontello-entypo/fontello-entypo.svg', svg
+		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.woff', woff,
+		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.ttf', ttf,
+		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.svg', svg
 	),
-	'fontello-entypo/fontello-entypo.eot',
+	'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.eot',
 	normal,
 	normal
 );
@@ -22,38 +22,38 @@
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello-entypo";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-note:before { content: '\e800'; } /* '' */
 .icon-logo-db:before { content: '\e91b'; } /* '' */
 .icon-music:before { content: '\e802'; } /* '' */

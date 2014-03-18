@@ -36,6 +36,23 @@ $(function(){
   $("#site-logo img").attr({"src":imgurl});
 
 
+  // main overlay
+  // Special Thanks: http://sanographix.github.io/gifanime/love-lab/
+  setInterval(function(){
+    var delay = 450;
+    $("#overlay")
+    .transition({ "background-color" : "#f8b500"}, delay) // 穂乃果
+    .transition({ "background-color" : "#6fc8e5"}, delay) // 絵里
+    .transition({ "background-color" : "#c7c7c7"}, delay) // ことり
+    .transition({ "background-color" : "#4c6cb3"}, delay) // 海未
+    .transition({ "background-color" : "#00ccbb"}, delay) // 凛
+    .transition({ "background-color" : "#fd8029"}, delay) // 真姫
+    .transition({ "background-color" : "#e792f6"}, delay) // 希
+    .transition({ "background-color" : "#349934"}, delay) // 花陽
+    .transition({ "background-color" : "#ff60bf"}, delay) // にこ
+  }, 0);
+
+
   // header fixed
   var mainVisualHeight;
   var scroll;
