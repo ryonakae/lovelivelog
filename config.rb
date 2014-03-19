@@ -3,9 +3,10 @@
 ###
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :nested
+  config.sass_options = { :line_comments => true, :debug_info => true }
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -48,12 +49,29 @@ activate :livereload
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
-# set :fonts_dir, 'stylesheets/fonts'
+set :fonts_dir, 'fonts'
+
+# Haml
+set :haml, { ugly: true, format: :html5 }
 
 # Build-specific configuration
 configure :build do
+  # Use relative URLs
+  activate :relative_assets
+
+  # リポジトリ名を host に設定しておく
+  # こうすることで stylesheet_link_tag などで展開されるパスが
+  # /test-middleman/stylesheets/normalize.css
+  # のようになる
+  # activate :asset_host, :host => "/lovelivelog"
+
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  compass_config do |config|
+    config.output_style = :compressed
+    config.sass_options = { :line_comments => false, :debug_info => false }
+  end
+
+  activate :minify_css
 
   # Minify Javascript on build
   activate :minify_javascript
@@ -61,17 +79,10 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
 
-  # Use relative URLs
-  activate :relative_assets
+  # activate :minify_html
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  # リポジトリ名を host に設定しておく
-  # こうすることで stylesheet_link_tag などで展開されるパスが
-  # /test-middleman/stylesheets/normalize.css
-  # のようになる
-  activate :asset_host, :host => "/lovelivelog"
 end
 
 # デプロイの設定
@@ -83,7 +94,7 @@ activate :deploy do |deploy|
 end
 
 # Change Compass configuration
-compass_config do |config|
-  config.output_style = :compact
-  set :fonts_dir, 'fonts' # ←コレ
-end
+# compass_config do |config|
+#   config.output_style = :compact
+#   set :fonts_dir, 'fonts' # ←コレ
+# end

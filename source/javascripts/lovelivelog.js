@@ -12,7 +12,7 @@ $(function(){
 
 
   // #main window resize
-  $(window).on("ready resize", function(){
+  function winResize(){
     headerHeight = $("#header").outerHeight()
     mainHeight = $(window).height() - headerHeight;
 
@@ -20,20 +20,37 @@ $(function(){
       "width" : $(window).width(),
       "height" : mainHeight
     });
+  }
+  winResize();
+  $(window).on("resize", function(){
+    winResize();
   });
 
 
   // main logo random
+  // set img (JS読み込んだHTMLからの相対パス)
   var array = [
     "images/logo-01.svg",
     "images/logo-02.svg",
     "images/logo-03.svg",
     "images/logo-04.svg"
   ];
-  var l = array.length;
-  var r = Math.floor(Math.random()*l);
-  var imgurl = array[r];
-  $("#site-logo img").attr({"src":imgurl});
+
+  // set function
+  function doRandom(){
+    var l = array.length;
+    var r = Math.floor(Math.random()*l);
+    var imgurl = array[r];
+    $("#site-logo img").attr({"src":imgurl});
+  }
+
+  // when document ready
+  doRandom();
+
+  // when logo clicked
+  $("#site-logo img").click(function(){
+    doRandom();
+  });
 
 
   // main overlay
@@ -72,22 +89,22 @@ $(function(){
 
 
   // header sp toggle
-  $("#toggle").on("click", function(){
+  $("#toggle").click(function(){
     $("header").toggleClass("open");
   });
-  $("#nav a").on("click", function(){
+  $("#nav a").click(function(){
     $("header").removeClass("open");
   });
 
 
   // gobottom
-  $("#gobottom").on("click", function(){
+  $("#gobottom").click(function(){
     $("html, body").stop().animate({ scrollTop : mainHeight + 1 }, 1000, "easeInOutCubic");
   });
 
 
   // backtop
-  $("#backtop").on("click", function(){
+  $("#backtop").click(function(){
     $("html, body").stop().animate({ scrollTop : 0 }, 1500, "easeInOutCubic");
   });
 
@@ -100,7 +117,16 @@ $(function(){
     var target = $(href == "#" || href == "" ? "html" : href);
     var offset = target.offset().top;
 
-    $("html, body").animate({ scrollTop : offset - headerHeight - 20 }, speed, easing);
+    var mediaquery_smartphone = 768 - 1;
+
+    // when pc and tablet
+    if ( $(window).width() > mediaquery_smartphone ) {
+      $("html, body").animate({ scrollTop : offset - headerHeight - 20 }, speed, easing);
+    }
+    // when smartphone
+    else {
+      $("html, body").animate({ scrollTop : offset - 20 }, speed, easing);
+    }
 
     return false;
   });

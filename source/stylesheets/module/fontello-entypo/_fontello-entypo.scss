@@ -2,15 +2,15 @@
 
 
 @include font-face(
-	'fontello-entypo',
-	font-files(
-		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.woff', woff,
-		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.ttf', ttf,
-		'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.svg', svg
-	),
-	'http://ryonakae.github.io/lovelivelog/fonts/fontello-entypo/fontello-entypo.eot',
-	normal,
-	normal
+  'fontello-entypo',
+  font-files(
+    'fontello-entypo/fontello-entypo.woff', woff,
+    'fontello-entypo/fontello-entypo.ttf', ttf,
+    'fontello-entypo/fontello-entypo.svg', svg
+  ),
+  'fontello-entypo/fontello-entypo.eot',
+  normal,
+  normal
 );
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
