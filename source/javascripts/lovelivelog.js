@@ -33,19 +33,24 @@ $(function(){
     "images/logo-01.svg",
     "images/logo-02.svg",
     "images/logo-03.svg",
-    "images/logo-04.svg"
+    "images/logo-04.svg",
+    "images/logo-05.svg",
+    "images/logo-06.svg",
+    "images/logo-07.svg"
   ];
 
   // set function
   function doRandom(){
     var l = array.length;
     var r = Math.floor(Math.random()*l);
-    var imgurl = array[r];
-    $("#site-logo img").attr({"src":imgurl});
+    var imgUrl = array[r];
+    $("#site-logo img").attr({ "src" : imgUrl });
   }
 
   // when document ready
-  doRandom();
+  $(window).on("load", function(){
+     doRandom();
+  });
 
   // when logo clicked
   $("#site-logo img").click(function(){
