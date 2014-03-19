@@ -4,8 +4,8 @@
 
 # Change Compass configuration
 compass_config do |config|
-  config.output_style = :nested
-  config.sass_options = { :line_comments => true, :debug_info => true }
+  config.output_style = :compressed
+  config.sass_options = { :line_comments => false, :debug_info => false }
 end
 
 ###
@@ -60,9 +60,6 @@ configure :build do
   activate :relative_assets
 
   # リポジトリ名を host に設定しておく
-  # こうすることで stylesheet_link_tag などで展開されるパスが
-  # /test-middleman/stylesheets/normalize.css
-  # のようになる
   # activate :asset_host, :host => "/lovelivelog"
 
   # For example, change the Compass output style for deployment
