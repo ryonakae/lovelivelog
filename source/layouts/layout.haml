@@ -37,7 +37,8 @@
     %script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
     %script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
     %script(src="//cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js")
-    %script(src="//ryo-lovelive.tumblr.com/api/read/json?num=50&amp;type=photo")
+    -# %script(src="//ryo-lovelive.tumblr.com/api/read/json?num=50&amp;type=photo")
+    %script(src="//ryo-lovelive.tumblr.com/api/read/json?num=25&amp;type=photo")
     = javascript_include_tag "tumblr_background_imager"
     = javascript_include_tag "lovelivelog"
 
@@ -68,7 +69,7 @@
         %div.niko
 
       %h1#site-logo<
-        %img(src="" alt="LoveLive!")
+        %img(src="images/logo-04.svg" alt="LoveLive!")
 
       -# text
       %p.txt My Personal LoveLive! Log

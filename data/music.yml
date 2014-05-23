@@ -1,16 +1,44 @@
 -
-  title: TVアニメ ラブライブ!2期 OP主題歌(DVD付)
-  image: http://g-ecx.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu.gif
-  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00IMKDVDS/ryonakae-22/ref=nosim/
+  title: TVアニメ ラブライブ! 2期 オリジナルサウンドトラック
+  image: http://g-ec2.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu._V156249166_AA300_.gif
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00JZ20PCM/ryonakae-22/ref=nosim/
   have: false
-  release: 2014-04-23
+  release: 2014-07-09
+  add: 2014-05-23
+-
+  title: TVアニメ ラブライブ! 2期 挿入歌(3)
+  image: http://g-ec2.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu._V156249166_AA300_.gif
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00JZ20PEA/ryonakae-22/ref=nosim/
+  have: false
+  release: 2014-07-09
+  add: 2014-05-23
+-
+  title: TVアニメ ラブライブ!2期 挿入歌(2)
+  image: http://ecx.images-amazon.com/images/I/81lsWepJh6L.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00JI859PG/ryonakae-22/ref=nosim/
+  have: false
+  release: 2014-06-11
+  add: 2014-05-23
+-
+  title: ユメノトビラ
+  image: http://ecx.images-amazon.com/images/I/815Z3SRXiYL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00JI859QK/ryonakae-22/ref=nosim/
+  have: false
+  release: 2014-05-28
+  add: 2014-05-23
+-
+  title: どんなときもずっと
+  image: http://ecx.images-amazon.com/images/I/71a40nA6ZtL.jpg
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00IMKDYOY/ryonakae-22/ref=nosim/
+  have: true
+  release: 2014-05-08
   add: 2014-03-18
 -
-  title: TVアニメ ラブライブ!2期 ED主題歌
-  image: http://g-ecx.images-amazon.com/images/G/09/nav2/dp/no-image-no-ciu.gif
-  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00IMKDYOY/ryonakae-22/ref=nosim/
-  have: false
-  release: 2014-05-08
+  title: それは僕たちの奇跡【DVD同梱】
+  image: http://ecx.images-amazon.com/images/I/91s91CBOhvL.png
+  link: http://www.amazon.co.jp/exec/obidos/ASIN/B00IMKDVDS/ryonakae-22/ref=nosim/
+  have: true
+  release: 2014-04-23
   add: 2014-03-18
 -
   title: ラブライブ!Solo Live! collection Memorial BOX II
@@ -128,7 +156,7 @@
   title: 微熱からMystery
   image: http://ecx.images-amazon.com/images/I/51hEs3wKh9L.jpg
   link: http://www.amazon.co.jp/exec/obidos/ASIN/B00CIXE54O/ryonakae-22/ref=nosim/
-  have: false
+  have: true
   release: 2013-06-26
   add: 2014-03-18
 -
@@ -142,7 +170,7 @@
   title: これからのSomeday/Wonder zone
   image: http://ecx.images-amazon.com/images/I/517ZwXsqTDL.jpg
   link: http://www.amazon.co.jp/exec/obidos/ASIN/B00ANSOSZ2/ryonakae-22/ref=nosim/
-  have: false
+  have: true
   release: 2013-03-06
   add: 2014-03-18
 -

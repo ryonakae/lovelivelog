@@ -29,6 +29,7 @@ $(function(){
   });
 
 
+  /*
   // main logo random
   // set img (JS読み込んだHTMLからの相対パス)
   var array = [
@@ -48,17 +49,21 @@ $(function(){
     var imgUrl = array[r];
     $("#site-logo img").attr({ "src" : imgUrl });
   }
+  */
 
   // when document ready
   $(window).on("load", function(){
     $("#site-logo").css({ "display" : "table-cell" });
-    doRandom();
+    $("#main .txt, #main #gobottom").css({ "opacity" : 1 });
+    // doRandom();
   });
 
   // when logo clicked
+  /*
   $("#site-logo img").click(function(){
     doRandom();
   });
+  */
 
 
   // main overlay
@@ -67,6 +72,7 @@ $(function(){
     setInterval(function(){
       var delay = 450;
       $("#overlay")
+      .css({ "opacity" : 0.2 })
       .transition({ "background-color" : "#f8b500"}, delay) // 穂乃果
       .transition({ "background-color" : "#6fc8e5"}, delay) // 絵里
       .transition({ "background-color" : "#c7c7c7"}, delay) // ことり

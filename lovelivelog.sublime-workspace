@@ -106,8 +106,21 @@
 	},
 	"file_history":
 	[
-		"/Users/RYO/GitHub/lovelivelog/README.md",
+		"/Users/RYO/GitHub/lovelivelog/data/book.yml",
+		"/Users/RYO/GitHub/lovelivelog/data/figure.yml",
 		"/Users/RYO/GitHub/lovelivelog/data/music.yml",
+		"/Users/RYO/GitHub/lovelivelog/data/video.yml",
+		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_common.sass",
+		"/Users/RYO/GitHub/lovelivelog/source/index.html.haml",
+		"/Users/RYO/GitHub/lovelivelog/source/javascripts/tumblr_background_imager.js",
+		"/Users/RYO/GitHub/lovelivelog/source/layouts/layout.haml",
+		"/Users/RYO/GitHub/lovelivelog/source/javascripts/lovelivelog.js",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection2/html/source/news-detail-gallery.html.slim",
+		"/Users/RYO/Dropbox/Design/_NowProject/ikimn_Fashion-Collection2/html/source/news-index.html.slim",
+		"/Users/RYO/GitHub/test/Gemfile",
+		"/Users/RYO/GitHub/lovelivelog/Gemfile.lock",
+		"/Users/RYO/GitHub/lovelivelog/Gemfile",
+		"/Users/RYO/GitHub/lovelivelog/README.md",
 		"/Users/RYO/Vagrant/vagrant-wp3.7/Vagrantfile",
 		"/Users/RYO/Vagrant/vagrant-wp3.8/Vagrantfile",
 		"/Users/RYO/Dropbox/Design/_NowProject/Border2014/html/develop/_scss/style.scss",
@@ -115,29 +128,19 @@
 		"/Users/RYO/Dropbox/Design/_NowProject/Border/html_2013-09_03/files/_scss/style.scss",
 		"/Users/RYO/Dropbox/Design/_NowProject/Border/html_2013-09_03/files/style.css",
 		"/Users/RYO/Vagrant/vagrant-wp3.8-2/Vagrantfile.sample",
-		"/Users/RYO/GitHub/lovelivelog/Gemfile",
 		"/Users/RYO/GitHub/lovelivelog/config.rb",
 		"/Users/RYO/GitHub/lovelivelog/build/index.html",
 		"/Users/RYO/GitHub/lovelivelog/build/stylesheets/style.css",
-		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_common.sass",
-		"/Users/RYO/GitHub/lovelivelog/Gemfile.lock",
-		"/Users/RYO/GitHub/lovelivelog/source/layouts/layout.haml",
-		"/Users/RYO/GitHub/lovelivelog/source/javascripts/lovelivelog.js",
-		"/Users/RYO/GitHub/lovelivelog/source/index.html.haml",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_variable.sass",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/module/fontello-entypo/_fontello-entypo.scss",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/style.css.sass",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_mixin.sass",
 		"/Users/RYO/GitHub/lovelivelog/source/images/ogp.jpg",
-		"/Users/RYO/GitHub/lovelivelog/data/book.yml",
-		"/Users/RYO/GitHub/lovelivelog/data/figure.yml",
 		"/Users/RYO/GitHub/lovelivelog/data/other.yml",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_media-queries.sass",
 		"/Users/RYO/GitHub/lovelivelog/source/layouts/_aa.html.erb",
-		"/Users/RYO/GitHub/lovelivelog/data/video.yml",
 		"/Users/RYO/GitHub/lovelivelog/source/_list.html.haml",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/module/_animation.scss",
-		"/Users/RYO/GitHub/lovelivelog/source/javascripts/tumblr_background_imager.js",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/common.sass",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/_nomarize.scss",
 		"/Users/RYO/GitHub/lovelivelog/source/stylesheets/all.css.sass",
@@ -204,6 +207,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"微熱",
+			"actives",
 			"config.vm.synced_folder",
 			"../fonts",
 			"http://ryonakae.github.io/lovelivelog/fonts/",
@@ -234,6 +239,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -253,11 +263,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.565459765803,
 			1.0
 		],
 		"rows":
