@@ -5,7 +5,7 @@
 # Change Compass configuration
 compass_config do |config|
   config.output_style = :expanded
-  config.sass_options = { :line_comments => false, :debug_info => false }
+  config.line_comments = false
 end
 
 activate :relative_assets
@@ -48,13 +48,25 @@ activate :livereload
 #   end
 # end
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
-set :fonts_dir, 'fonts'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 # Haml
 set :haml, { ugly: true, format: :html5 }
+
+# Slim
+require 'slim'
+set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
+
+# Autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  # config.cascade  = false
+  # config.inline   = false
+  # config.ignore   = ['hacks.css']
+end
 
 # Build-specific configuration
 configure :build do
@@ -65,11 +77,6 @@ configure :build do
   # activate :asset_host, :host => "/lovelivelog"
 
   # For example, change the Compass output style for deployment
-  compass_config do |config|
-    config.output_style = :compressed
-    config.sass_options = { :line_comments => false, :debug_info => false }
-  end
-
   activate :minify_css
 
   # Minify Javascript on build
@@ -80,8 +87,17 @@ configure :build do
 
   # activate :minify_html
 
+  # Use relative URLs
+  # activate :relative_assets
+  # set :relative_links, true
+
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Remove Indent
+  configure :build do
+    activate :remove_indent
+  end
 end
 
 # デプロイの設定
@@ -91,9 +107,3 @@ activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'gh-pages'
 end
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-#   set :fonts_dir, 'fonts' # ←コレ
-# end
