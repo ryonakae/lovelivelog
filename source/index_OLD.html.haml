@@ -1,0 +1,57 @@
+---
+layout: layout
+title: LoveLiveLog
+description: My Personal LoveLive! Log
+---
+
+-# music
+- cat = "music"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      = partial 'layouts/list', locals: {cat: data.music}
+
+
+-# video
+- cat = "video"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      = partial 'layouts/list', locals: {cat: data.video}
+
+-# book
+- cat = "book"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      = partial 'layouts/list', locals: {cat: data.book}
+
+-# figure
+- cat = "figure"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      = partial 'layouts/list', locals: {cat: data.figure}
+
+-# other
+- cat = "other"
+%div(id="#{cat}")
+  %section
+    %h2 #{cat}
+    %ul
+      = partial 'layouts/list', locals: {cat: data.other}
+
+-# about
+%div#about
+  %section
+    %h2 about
+    %p
+      My Presonal <a href="http://www.lovelive-anime.jp/" target="_blank">LoveLive!</a> Log.
+      %br
+      Contact: <a href="http://brdr.jp/" target="_blank">RYO NAKAE</a>
+      %br
+      Source Code: <a href="https://github.com/ryonakae/lovelivelog/" target="_blank">GitHub Project</a>
